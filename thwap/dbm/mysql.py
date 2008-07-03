@@ -37,5 +37,3 @@ class DB:
 	def __init__(self, hostname='', username='', password=''):
 		if hostname == '': hostname = localhost
 		if username == '': username = os.getenv('USER')
-		if password == '':
-			self.db = MySQLdb.connect(host=hostname
