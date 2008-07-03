@@ -1,5 +1,4 @@
 import sys, types
-sys.path.insert(0, '::PREFIX::/lib')
 from thUtils.stdlib import *
 from threading import Thread
 
