@@ -9,8 +9,8 @@ sys.path.append('/utils/lib')
 # Program code
 import os, popen2
 from optparse import OptionParser
-from thUtils import glsa
-from thUtils import mslurp
+from thwap.system import glsa
+from thwap.utils import slurp
 
 def emerge_parse(st):
 	if st.find('Calculating') != -1:
@@ -31,7 +31,7 @@ if __name__ == '__main__':
 	if opts.repr == True:
 		for aff in gsobj.affectd.keys():
 			print 'Attempting to automatically apply fix for GLSA %s.' % aff
-			obj = mslurp.Proc()
+			obj = slurp.Proc()
 			obj.register_trigger({'t_pattern': '^.*', 't_callback': emerge_parse})
 			if opts.rhost != None and opts.ruser != None:
 				cmd = 'ssh %s@%s "%s -nf %s"' % (gsobj.user,gsobj.host,gsobj.glsa,aff)

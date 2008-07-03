@@ -13,7 +13,7 @@ class UseEd:
 		# This is a two stage mapper
 		# Stage 1: Collect all the lines with USE flags from pretend output
 		lines = []
-		o = popen2.Popen4('EMERGE_DEFAULT_OPTS="-vpuDg" emerge %s' % self.pkgs)
+		o = popen2.Popen4('EMERGE_DEFAULT_OPTS="-vpuD" emerge %s' % self.pkgs)
 		buff = o.fromchild.readline()
 		while buff != '':
 			if buff.strip().find('USE') != -1:
@@ -81,4 +81,4 @@ class UseEd:
 		print self.formatRows(st)
 
 if __name__ == '__main__':
-	o = UseEd('mozilla-thunderbird')
+	o = UseEd('evolution')

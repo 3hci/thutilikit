@@ -1,12 +1,10 @@
 #!/usr/bin/env python
 import sys
-sys.path.insert(0,'/superstore/share.d/')
 import os, time, re, types
-from asUtils import ex
-from asUtils import config
-from asUtils import options
-from asUtils import mysql
-from asUtils import log
+from thwap.utils import config
+from thwap.utils import options
+from thwap.dbm import mysql
+from thwap.utils import log
 # Declare our eptions and optionally
 # a default error string.
 noHostError = ''
