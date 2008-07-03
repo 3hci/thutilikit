@@ -7,7 +7,8 @@ setup(name='thwap',
 				  'thwap/utils/__init__', 'thwap/utils/config', 'thwap/utils/mslurp', 'thwap/utils/mstat', 'thwap/utils/pcrt',
 				  'thwap/lvm/__init__','thwap/lvm/config','thwap/lvm/excpt','thwap/lvm/lvm','thwap/lvm/meta','thwap/lvm/parser',
 			  ],
-	  data_files=[('/usr/sbin/', ['sbin/thSec.py'])]
+	  data_files=[('/utils/sbin/', ['sbin/thSec.py']),
+			      ('/utils/bin/', ['bin/asMon.py','bin/asUsed.py','bin/epkg.in','bin/repCheck.py','bin/use-editor.py'])]
 
       )
 
