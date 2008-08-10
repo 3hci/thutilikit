@@ -4,3 +4,6 @@
 [submodule "thutils"]
 	path = thutils
 	url = git://github.com/fuzzyoni/thutils.git
+[submodule "opt/thunder"]
+	path = opt/thunder
+	url = git://github.com/fuzzyoni/thunder.git
