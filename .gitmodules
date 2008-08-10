@@ -1,0 +1,3 @@
+[submodule "libthwap"]
+	path = libthwap
+	url = git://github.com/fuzzyoni/libthwap.git
