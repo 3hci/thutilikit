@@ -1,3 +1,6 @@
 [submodule "libthwap"]
 	path = libthwap
 	url = git://github.com/fuzzyoni/libthwap.git
+[submodule "thutils"]
+	path = thutils
+	url = git://github.com/fuzzyoni/thutils.git
